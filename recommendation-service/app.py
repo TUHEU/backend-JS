@@ -21,8 +21,8 @@ from services import DestinationService, ReviewService, RecommendationService
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 DESTINATIONS_FILE = os.path.join(DATA_DIR, "destinations.json")
 
-USER_SERVICE_URL = os.environ.get("USER_SERVICE_URL", "http://localhost:5001")
-ITINERARY_SERVICE_URL = os.environ.get("ITINERARY_SERVICE_URL", "http://localhost:5002")
+USER_SERVICE_URL = os.environ.get("USER_SERVICE_URL", "http://localhost:5005")
+ITINERARY_SERVICE_URL = os.environ.get("ITINERARY_SERVICE_URL", "http://localhost:5006")
 
 
 def create_app() -> Flask:
@@ -88,5 +88,5 @@ def create_app() -> Flask:
 
 if __name__ == "__main__":
     app = create_app()
-    port = int(os.environ.get("PORT", 5003))
+    port = int(os.environ.get("PORT", 5007))
     app.run(host="0.0.0.0", port=port, debug=True)

@@ -1,42 +1,45 @@
 version: "3.9"
 
+# Only the gateway is reachable from outside this machine — the three
+# backend services talk to each other and to the gateway over Docker's
+# internal network (by service name), so they don't publish a host
+# port at all. From the VPS's point of view, this stack uses exactly
+# one port: 5004.
+
 services:
   user-service:
     build: ./user-service
-    ports: ["5001:5001"]
     environment:
       - GLOBETROTTER_SECRET=dev-secret-change-in-prod
-      - PORT=5001
+      - PORT=5005
     volumes:
       - ./user-service/data:/app/data
 
   itinerary-service:
     build: ./itinerary-service
-    ports: ["5002:5002"]
     environment:
       - GLOBETROTTER_SECRET=dev-secret-change-in-prod
-      - PORT=5002
+      - PORT=5006
     volumes:
       - ./itinerary-service/data:/app/data
 
   recommendation-service:
     build: ./recommendation-service
-    ports: ["5003:5003"]
     environment:
       - GLOBETROTTER_SECRET=dev-secret-change-in-prod
-      - PORT=5003
-      - USER_SERVICE_URL=http://user-service:5001
-      - ITINERARY_SERVICE_URL=http://itinerary-service:5002
+      - PORT=5007
+      - USER_SERVICE_URL=http://user-service:5005
+      - ITINERARY_SERVICE_URL=http://itinerary-service:5006
     volumes:
       - ./recommendation-service/data:/app/data
     depends_on: [user-service, itinerary-service]
 
   api-gateway:
     build: ./api-gateway
-    ports: ["5000:5000"]
+    ports: ["5004:5004"]   # <-- the only port this stack exposes
     environment:
-      - PORT=5000
-      - USER_SERVICE_URL=http://user-service:5001
-      - ITINERARY_SERVICE_URL=http://itinerary-service:5002
-      - RECOMMENDATION_SERVICE_URL=http://recommendation-service:5003
+      - PORT=5004
+      - USER_SERVICE_URL=http://user-service:5005
+      - ITINERARY_SERVICE_URL=http://itinerary-service:5006
+      - RECOMMENDATION_SERVICE_URL=http://recommendation-service:5007
     depends_on: [user-service, itinerary-service, recommendation-service]
