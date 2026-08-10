@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  user-service:
+    build: ./user-service
+    ports: ["5001:5001"]
+    environment:
+      - GLOBETROTTER_SECRET=dev-secret-change-in-prod
+      - PORT=5001
+    volumes:
+      - ./user-service/data:/app/data
+
+  itinerary-service:
+    build: ./itinerary-service
+    ports: ["5002:5002"]
+    environment:
+      - GLOBETROTTER_SECRET=dev-secret-change-in-prod
+      - PORT=5002
+    volumes:
+      - ./itinerary-service/data:/app/data
+
+  recommendation-service:
+    build: ./recommendation-service
+    ports: ["5003:5003"]
+    environment:
+      - GLOBETROTTER_SECRET=dev-secret-change-in-prod
+      - PORT=5003
+      - USER_SERVICE_URL=http://user-service:5001
+      - ITINERARY_SERVICE_URL=http://itinerary-service:5002
+    volumes:
+      - ./recommendation-service/data:/app/data
+    depends_on: [user-service, itinerary-service]
+
+  api-gateway:
+    build: ./api-gateway
+    ports: ["5000:5000"]
+    environment:
+      - PORT=5000
+      - USER_SERVICE_URL=http://user-service:5001
+      - ITINERARY_SERVICE_URL=http://itinerary-service:5002
+      - RECOMMENDATION_SERVICE_URL=http://recommendation-service:5003
+    depends_on: [user-service, itinerary-service, recommendation-service]
