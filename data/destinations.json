@@ -1,0 +1,406 @@
+[
+  {
+    "id": "d001",
+    "name": "Mont Fébé",
+    "neighborhood": "Fébé",
+    "category": "nature",
+    "description": "One of Yaoundé's famous seven hills, with a hotel, golf course, and panoramic views of the city.",
+    "tags": [
+      "nature",
+      "hiking",
+      "views",
+      "hill"
+    ],
+    "popularity_score": 92,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A9g%C3%A9tation%20sur%20le%20Mont%20F%C3%A9b%C3%A9.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.9021,
+      "lng": 11.5194
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d002",
+    "name": "Mont Mbankolo",
+    "neighborhood": "Mbankolo",
+    "category": "nature",
+    "description": "A quieter hill on the western side of the city, popular with joggers and locals at sunrise.",
+    "tags": [
+      "nature",
+      "hiking",
+      "views",
+      "hill"
+    ],
+    "popularity_score": 61,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A9g%C3%A9tation%20sur%20le%20Mont%20F%C3%A9b%C3%A9.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8807,
+      "lng": 11.4642
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d003",
+    "name": "Marché Central",
+    "neighborhood": "Centre-ville",
+    "category": "market",
+    "description": "Yaoundé's bustling central market, known for fabrics, spices, produce, and everyday goods.",
+    "tags": [
+      "market",
+      "shopping",
+      "food",
+      "culture"
+    ],
+    "popularity_score": 88,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/March%C3%A9%20central%20-%20Central%20market%20(interior)%20in%20Yaound%C3%A9.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8667,
+      "lng": 11.5167
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d004",
+    "name": "Marché Mokolo",
+    "neighborhood": "Mokolo",
+    "category": "market",
+    "description": "One of the largest and most vibrant markets in Central Africa, selling everything from textiles to electronics.",
+    "tags": [
+      "market",
+      "shopping",
+      "food",
+      "culture"
+    ],
+    "popularity_score": 90,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/March%C3%A9%20Mokolo%20%C3%A0%20Yaound%C3%A9.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8742,
+      "lng": 11.5001
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d005",
+    "name": "Musée National du Cameroun",
+    "neighborhood": "Centre Administratif",
+    "category": "museum",
+    "description": "Housed in the former presidential palace, this museum showcases Cameroon's cultural and artistic heritage.",
+    "tags": [
+      "history",
+      "culture",
+      "museum",
+      "art"
+    ],
+    "popularity_score": 74,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mus%C3%A9e%20National%20du%20Cameroun%2003.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8656,
+      "lng": 11.5178
+    },
+    "price_fcfa": 2000,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d006",
+    "name": "Cathédrale Notre-Dame des Victoires",
+    "neighborhood": "Centre-ville",
+    "category": "landmark",
+    "description": "A striking cathedral in the heart of the city, notable for its architecture and stained glass.",
+    "tags": [
+      "history",
+      "architecture",
+      "culture",
+      "landmark"
+    ],
+    "popularity_score": 70,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cath%C3%A9drale%20de%20Yaound%C3%A9.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8672,
+      "lng": 11.5183
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d007",
+    "name": "Jardin Botanique de Yaoundé",
+    "neighborhood": "Nlongkak",
+    "category": "nature",
+    "description": "A green escape in the city center featuring native plant species and shaded walking paths.",
+    "tags": [
+      "nature",
+      "family",
+      "relaxation"
+    ],
+    "popularity_score": 58,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yaound%C3%A9.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8745,
+      "lng": 11.5152
+    },
+    "price_fcfa": 500,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d008",
+    "name": "Stade Omnisports Ahmadou Ahidjo",
+    "neighborhood": "Mfandena",
+    "category": "sports",
+    "description": "Yaoundé's iconic stadium, home to major football matches and national celebrations.",
+    "tags": [
+      "sports",
+      "events",
+      "landmark"
+    ],
+    "popularity_score": 80,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stade%20Ahmadou%20Ahidjo%202014%20(1).JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8856,
+      "lng": 11.5406
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d009",
+    "name": "Palais des Congrès",
+    "neighborhood": "Centre Administratif",
+    "category": "landmark",
+    "description": "A major venue for conferences, exhibitions, and national events, recognizable by its modern architecture.",
+    "tags": [
+      "architecture",
+      "events",
+      "landmark"
+    ],
+    "popularity_score": 65,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Boulevard%20de%20la%20r%C3%A9unification%2C%20Yaound%C3%A9%202014.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8657,
+      "lng": 11.5241
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d010",
+    "name": "Université de Yaoundé I",
+    "neighborhood": "Ngoa-Ekelle",
+    "category": "education",
+    "description": "The oldest and largest university in Cameroon, with a leafy campus and student life to explore.",
+    "tags": [
+      "education",
+      "culture",
+      "student-life"
+    ],
+    "popularity_score": 55,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yaound%C3%A9.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8697,
+      "lng": 11.5013
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d011",
+    "name": "Quartier Bastos",
+    "neighborhood": "Bastos",
+    "category": "neighborhood",
+    "description": "Yaoundé's upscale diplomatic quarter, home to embassies, fine dining, and leafy avenues.",
+    "tags": [
+      "nightlife",
+      "food",
+      "shopping",
+      "luxury"
+    ],
+    "popularity_score": 77,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yd%C3%A9-2.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8867,
+      "lng": 11.5122
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d012",
+    "name": "Quartier Mvog-Mbi",
+    "neighborhood": "Mvog-Mbi",
+    "category": "neighborhood",
+    "description": "A lively residential quarter known for its street food scene and neighborhood markets.",
+    "tags": [
+      "food",
+      "culture",
+      "local-life"
+    ],
+    "popularity_score": 50,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambiance%20du%20march%C3%A9%20du%20Mfoundi.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8547,
+      "lng": 11.5108
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d013",
+    "name": "Lac Municipal de Yaoundé",
+    "neighborhood": "Efoulan",
+    "category": "nature",
+    "description": "A man-made lake popular for weekend strolls, paddle boats, and lakeside relaxation.",
+    "tags": [
+      "nature",
+      "family",
+      "relaxation"
+    ],
+    "popularity_score": 68,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yaound%C3%A9.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8511,
+      "lng": 11.4989
+    },
+    "price_fcfa": 500,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d014",
+    "name": "Monument de la Réunification",
+    "neighborhood": "Tsinga",
+    "category": "landmark",
+    "description": "A hilltop monument commemorating Cameroon's reunification, with sweeping views of the city.",
+    "tags": [
+      "history",
+      "views",
+      "landmark"
+    ],
+    "popularity_score": 72,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Monument%20Yaound%C3%A9.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8698,
+      "lng": 11.5089
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d015",
+    "name": "Quartier Mfoundi / Centre Ville",
+    "neighborhood": "Mfoundi",
+    "category": "neighborhood",
+    "description": "The administrative and commercial heart of Yaoundé, home to government buildings, banks, and shops.",
+    "tags": [
+      "shopping",
+      "culture",
+      "landmark"
+    ],
+    "popularity_score": 66,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ambiance%20du%20march%C3%A9%20du%20Mfoundi.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8667,
+      "lng": 11.5167
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d016",
+    "name": "Mont Eloumdem",
+    "neighborhood": "Eloumdem",
+    "category": "nature",
+    "description": "A lesser-known of the seven hills, offering a peaceful hike away from the busier city center.",
+    "tags": [
+      "nature",
+      "hiking",
+      "hill"
+    ],
+    "popularity_score": 40,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A9g%C3%A9tation%20sur%20le%20Mont%20F%C3%A9b%C3%A9.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8419,
+      "lng": 11.4765
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d017",
+    "name": "Quartier Essos",
+    "neighborhood": "Essos",
+    "category": "neighborhood",
+    "description": "A dynamic quarter known for its nightlife, bars, and grilled fish (poisson braisé) spots.",
+    "tags": [
+      "nightlife",
+      "food",
+      "local-life"
+    ],
+    "popularity_score": 63,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yd%C3%A9-2.jpg",
+    "reviews": [],
+    "image_is_generic_placeholder": true,
+    "location": {
+      "lat": 3.8825,
+      "lng": 11.5225
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  },
+  {
+    "id": "d018",
+    "name": "Basilique Marie Reine des Apôtres",
+    "neighborhood": "Mvolyé",
+    "category": "landmark",
+    "description": "A hilltop basilica in Mvolyé offering both spiritual significance and one of the best viewpoints over Yaoundé.",
+    "tags": [
+      "history",
+      "architecture",
+      "views",
+      "culture"
+    ],
+    "popularity_score": 69,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique%20Mari-Reine%20des%20apotres%20de%20Mvolye.JPG",
+    "reviews": [],
+    "image_is_generic_placeholder": false,
+    "location": {
+      "lat": 3.8489,
+      "lng": 11.5075
+    },
+    "price_fcfa": 0,
+    "location_is_approximate": true
+  }
+]
