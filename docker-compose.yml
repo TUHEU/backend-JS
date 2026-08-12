@@ -5,10 +5,19 @@ version: "3.9"
 # internal network (by service name), so they don't publish a host
 # port at all. From the VPS's point of view, this stack uses exactly
 # one port: 5004.
+#
+# restart: unless-stopped on every service means Docker's own daemon
+# restarts them automatically after a crash AND after a VPS reboot
+# (as long as the Docker daemon itself is set to start on boot, which
+# it is by default on a systemd-based install like this Ubuntu VPS).
+# "unless-stopped" specifically means: always restart, EXCEPT if you
+# explicitly ran `docker compose stop` — so a deliberate stop stays
+# stopped, but a crash or reboot doesn't leave it down.
 
 services:
   user-service:
     build: ./user-service
+    restart: unless-stopped
     environment:
       - GLOBETROTTER_SECRET=dev-secret-change-in-prod
       - PORT=5005
@@ -17,6 +26,7 @@ services:
 
   itinerary-service:
     build: ./itinerary-service
+    restart: unless-stopped
     environment:
       - GLOBETROTTER_SECRET=dev-secret-change-in-prod
       - PORT=5006
@@ -25,6 +35,7 @@ services:
 
   recommendation-service:
     build: ./recommendation-service
+    restart: unless-stopped
     environment:
       - GLOBETROTTER_SECRET=dev-secret-change-in-prod
       - PORT=5007
@@ -36,6 +47,7 @@ services:
 
   api-gateway:
     build: ./api-gateway
+    restart: unless-stopped
     ports: ["5004:5004"]   # <-- the only port this stack exposes
     environment:
       - PORT=5004
